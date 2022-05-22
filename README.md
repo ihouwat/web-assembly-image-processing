@@ -2,13 +2,13 @@
 ![image of the app](./readme_resources/app-demo.jpg)
 
 ## Goal
-Took a quick course on [Zero To Mastery](https://zerotomastery.io/courses/learn-webassembly/) to learn the basics of Web Assembly. As a bonus, we get to learn the basics of the Rust language. Try out the app using the link in About section.
+Took a quick course on [Zero To Mastery](https://zerotomastery.io/courses/learn-webassembly/) to learn the basics of Web Assembly. As a bonus, we get to learn the basics of the Rust language. Try out the app by following the link in the About section.
 
 ## App description
 A user uploads a PNG image. The app converts the image to grayscale and renders the converted version in the browser.
 
 The workflow is the following:
-- Upload a PNG file using HTML inputs
+- Upload a PNG file with input field
 - Read file using JS
 - Convert image to Base64 string to pass on to Rust
 - Transform string to binary file in Rust
