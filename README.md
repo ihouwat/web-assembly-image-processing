@@ -5,7 +5,7 @@
 Took a quick course on [Zero To Mastery](https://zerotomastery.io/courses/learn-webassembly/) to learn the basics of Web Assembly. As a bonus, we get to learn the basics of the Rust language. Try out the app using the link in About section.
 
 ## App description
-A user uploads a PNG image. The app converts and renders a grayscale version of the image. 
+A user uploads a PNG image. The app converts the image to grayscale and renders the converted version in the browser.
 
 The workflow is the following:
 - Upload a PNG file using HTML inputs
