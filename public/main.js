@@ -1,7 +1,7 @@
 // Importing WA file. Since importing a file is an async operation, need async keyword
 async function init() {
 
-  // Importing WA file here
+  // Importing WA file/module here
   let rustApp = null;
   
   try {
@@ -18,10 +18,14 @@ async function init() {
 
   fileReader.onloadend = () => {
     const base64 = fileReader.result.replace(
-      /^data:image\/(png|jpeg|jpg);base64,/, 'f'
+      /^data:image\/(png|jpeg|jpg);base64,/, ''
     );
-    console.log(input.files[0]);
-    console.log(base64);
+
+    // rustApp is a module. Therefore you can access methods/properties exported by that module 
+    let img_data_url = rustApp.grayscale(base64);
+    document.getElementById('new-img').setAttribute(
+      'src', img_data_url
+    );
   }
 
   input.addEventListener('change', () => {

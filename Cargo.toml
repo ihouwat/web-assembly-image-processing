@@ -10,4 +10,13 @@ crate-type = ["cdylib"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-wasm-bindgen = "0.2"
+wasm-bindgen = "0.2" # to export functions between Rust and other languages
+base64 = "0.13.0" # decode/encode base64
+image = "0.23.14" # for interacting with an image's binary data
+
+# below is a separate dependencies table with the name of a crate appended to the end
+# this allows for partial import of a crate
+# web-sys is a heavy crate. we don't need all its features
+[dependencies.web-sys]
+version = "0.3.4"
+features = ["console"]
