@@ -15,7 +15,7 @@ The workflow is the following:
 - Manipulate image
 - Use buffer to store image
 - Encode image to Base64 string
-- Pass Base64 string back to JS to render in the browser
+- Pass Base64 string back to JS to render the manipulated image in the browser
 
 ## Tech
 - Webpack: bundling, compiling Rust, creating dev server
